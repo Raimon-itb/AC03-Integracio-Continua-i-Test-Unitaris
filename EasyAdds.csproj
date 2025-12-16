@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Library">
+      <HintPath>bin\Debug\net9.0\Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

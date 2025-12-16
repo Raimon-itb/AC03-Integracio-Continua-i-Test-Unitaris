@@ -1,4 +1,5 @@
 ﻿using System;
+using Utils;
 
 class Program
 {
@@ -12,40 +13,20 @@ class Program
         const string MsgPositive = "The result is positive";
         const string MsgExit = "Ending the program...";
 
-        int a = 5, b = 10, c = 15, result = 0; //All int can be initialized in the same line.
+        int numOne, numTwo, numThree; //All int can be initialized in the same line. We also change the variabe names so they are significative.
+
+        //We ask the numbers to the user because a program with given numbers is useless.
+        numOne = Tools.AskNumber();
+        numTwo = Tools.AskNumber();
+        numThree = Tools.AskNumber();
 
         Console.WriteLine(MsgWelcome); //We don't need to show the same message twice + we turn the messages into constants.
 
-        Console.WriteLine(IsPositive(a, b, c) ? MsgPositive : MsgZero);
+        Console.WriteLine(Tools.IsPositive(numOne, numTwo, numThree) ? MsgPositive : MsgZero);
         //We can skip the negative case because there's no possible negative result.
 
         // The next part of the code is useless + there's a while(true) and a commented variable, so we skip it.
 
         Console.WriteLine(MsgExit);
-    }
-
-    static bool IsPositive (int a, int b, int c) {
-        if (a > 0)
-        {
-            if (b > 0)
-            {
-                if (c > 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return true;
-                }
-            }
-            else
-            {
-                return true;
-            }
-        }
-        else
-        {
-            return false;
-        }
     }
 }
