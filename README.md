@@ -1,10 +1,7 @@
-## 4.Test xUnit
+# AC03-Integracio-Continua-i-Test-Unitaris
 
-La sortida per consola es captura utititzant la funcionalitat de xUnit.net v3 [assembly: CaptureConsole].
+## Interface configuration
 
-<<<<<<< HEAD
-Exemple
-=======
 ### SonarCloud
 SonarCloud is an online solution to work with SonarQube via cloud.
 
@@ -20,12 +17,8 @@ When selecting the build options, we must choose .NET and create the build.yml a
 
 And, with that, we should be settled.
 
-## Code refactoring
-
 ## Credits
 
 All SonarCloud configuration has been done following either SonarQube's manuals available on their webpage or the configuration's guide showed during the process itself.
 
 Thanks to Raquel for answering all our doubts.
-
->>>>>>> a2198845b7f30de2ae787f4a806b06140f7921b4
