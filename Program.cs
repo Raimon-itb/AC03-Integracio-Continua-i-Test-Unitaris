@@ -16,39 +16,36 @@ class Program
 
         Console.WriteLine(MsgWelcome); //We don't need to show the same message twice + we turn the messages into constants.
 
+        Console.WriteLine(IsPositive(a, b, c) ? MsgPositive : MsgZero);
+        //We can skip the negative case because there's no possible negative result.
+
+        // The next part of the code is useless + there's a while(true) and a commented variable, so we skip it.
+
+        Console.WriteLine(MsgExit);
+    }
+
+    static bool IsPositive (int a, int b, int c) {
         if (a > 0)
         {
             if (b > 0)
             {
                 if (c > 0)
                 {
-                    result = a + b + c;
-                } else
-                {
-                    result = a + b;
+                    return true;
                 }
-            } else
-            {
-                result = a;
+                else
+                {
+                    return true;
+                }
             }
-        } else
-        {
-            result = 0;
+            else
+            {
+                return true;
+            }
         }
-        
-        switch (result)
+        else
         {
-            case 0:
-                Console.WriteLine(MsgZero);
-                break;
-            case 1: 
-                Console.WriteLine(MsgPositive);
-                break;
-            //We can skip the negative case because there's no possible negative result.
+            return false;
         }
-
-        // The next part of the code is useless + there's a while(true) and a commented variable, so we skip it.
-
-        Console.WriteLine(MsgExit);
     }
 }
