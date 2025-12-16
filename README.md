@@ -11,11 +11,19 @@ Once we're logged in, we install SonarCloud in the repositories we want to work 
 
 In this case, we create an organization called SonarCloud with the key sonarcloud25, choose the free plan and click "Create organization". Then, we must add the project we're working on. To do that, we may click "Analyze a new project" and select the repository we want to use.
 
-After that, we have to use GitHub Actions and, for that, SonarCloud gives a token. We have to follow the path %RespositoryName > Settings > Secrets and Variables > Actions, click "Create new secret" and input SONAR_TOKEN as the name, and the tocken value as the secret. We procceed by clicking "Add secret".
+### GitHub Actions
+
+After we've configured SonarCloud, we have to use GitHub Actions and, for that, SonarCloud gives a token. We have to follow the path %RespositoryName > Settings > Secrets and Variables > Actions, click "Create new secret" and input SONAR_TOKEN as the name, and the tocken value as the secret. We procceed by clicking "Add secret".
 
 When selecting the build options, we must choose .NET and create the build.yml as stated on the set-up process on our local machine, to then upload it to the repository.
 
 And, with that, we should be settled.
+
+> ***Pregunta 1**: En aquest anàlisi inicial del programa, es mostren resultats en l’apartat de cobertura de codi (coverage)? Raoneu la vostra resposta, incloent una captura de la pantalla de resum de SonarCloud.*
+>
+> Sense haver posat res cap test, el coverage és 0, ja que no s'està avaluant cap codi. Però sí que surt.
+
+
 
 ## Credits
 
