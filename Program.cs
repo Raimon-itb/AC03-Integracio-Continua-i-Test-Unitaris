@@ -13,12 +13,7 @@ class Program
         const string MsgPositive = "The result is positive";
         const string MsgExit = "Ending the program...";
 
-        int numOne, numTwo, numThree; //All int can be initialized in the same line. We also change the variabe names so they are significative.
-
-        //We ask the numbers to the user because a program with given numbers is useless.
-        numOne = Tools.AskNumber();
-        numTwo = Tools.AskNumber();
-        numThree = Tools.AskNumber();
+        int numOne = 5, numTwo = 15, numThree = 10; //All int can be initialized in the same line. We also change the variabe names so they are significative.
 
         Console.WriteLine(MsgWelcome); //We don't need to show the same message twice + we turn the messages into constants.
 
