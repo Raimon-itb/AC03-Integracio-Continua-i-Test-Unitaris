@@ -17,8 +17,11 @@ When selecting the build options, we must choose .NET and create the build.yml a
 
 And, with that, we should be settled.
 
+## Code refactoring
+
 ## Credits
 
 All SonarCloud configuration has been done following either SonarQube's manuals available on their webpage or the configuration's guide showed during the process itself.
 
 Thanks to Raquel for answering all our doubts.
+
