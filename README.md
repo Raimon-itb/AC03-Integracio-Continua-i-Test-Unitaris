@@ -20,6 +20,8 @@ When selecting the build options, we must choose .NET and create the build.yml a
 And, with that, we should be settled.
 
 > **Pregunta 1**: *En aquest anàlisi inicial del programa, es mostren resultats en l’apartat de cobertura de codi (coverage)? Raoneu la vostra resposta, incloent una captura de la pantalla de resum de SonarCloud.*
+> <img width="1110" height="180" alt="image" src="https://github.com/user-attachments/assets/cf13676b-7907-41d6-a526-706a18f8dfe5" />
+
 >
 > Sense haver posat res cap test, el coverage és 0, ja que no s'està avaluant cap codi. Però sí que surt.
 
